@@ -1,1 +1,2 @@
-print(8 ** 2)
+n = int(input())
+x = int(input())

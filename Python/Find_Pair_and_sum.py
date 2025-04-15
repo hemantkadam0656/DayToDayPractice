@@ -4,5 +4,8 @@ target = 10
 dict = {}
 
 for i, num in enumerate(list):
-    if target - num in dict:
+    if num in dict:
+        print(dict[num], i)
+    else:
+        dict[target - num] = i
         

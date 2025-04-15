@@ -10,5 +10,4 @@ for i, num in enumerate(list):
     else:
         dict[target - num] = i
 
-
 print(dict)
