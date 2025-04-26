@@ -1,9 +1,35 @@
-str = 'the sky is blue'
+class Node():
+    def __init__(self, data, next = None):
+        self.data = data
+        self.next = next
 
-list = str.split()
 
-s = list[::-1]
+class FrondInsertion():
+    def __init__(self):
+        self.head = None
 
-new_str = ' '.join(s)
+    def newinsertion(self,data):
+        new_node = Node(data, self.head)
+        self.head = new_node
+    
+    def print(self):
+        if self.head is None:
+            return
 
-print(new_str)
+        itr = self.head
+        llist= ''
+        while itr:
+            llist += str(itr.data) + '-->'
+            itr = itr.next
+
+        print(llist + 'None') 
+
+# main function 
+# def main():
+obj =  FrondInsertion()
+obj.newinsertion(5)
+obj.newinsertion(6)
+obj.print()  
+
+# if __name__ == '__main__':
+#     main()
