@@ -3,9 +3,13 @@ target = 10
  
 dict = {}
 
+lst = []
+
 for i, num in enumerate(list):
     if num in dict:
-        print(dict[num], i)
+        lst.append((dict[num], i))
     else:
         dict[target - num] = i
         
+print(dict)
+print(lst)
