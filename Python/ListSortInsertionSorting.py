@@ -3,11 +3,8 @@ def main(list):
 
     if n <= 1:
         return 
-    
-
-    
+        
     for i in range(1, n):
-        print(list[1])
         key = list[i]
         j = i - 1
 

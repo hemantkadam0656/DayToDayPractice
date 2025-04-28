@@ -1,6 +1,6 @@
-# string = "hi there, you need to deploy this code file on github."
+string = "hi there, you need to deploy this code file on github."
 
-# words = string.split(" ")
+words = string.split(" ")
 
 words = ["hem", 'ha']
 
