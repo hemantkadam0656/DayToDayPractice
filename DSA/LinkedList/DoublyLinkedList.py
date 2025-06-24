@@ -1,13 +1,16 @@
+# doubly linked list node 
 class Node:
     def __init__(self,data, prev = None, next=None):
         self.data = data
         self.prev = prev
         self.next = next
 
+# class declared for doubly linked list 
 class DoublyLinkedList:
     def __init__(self):
         self.head = None
     
+    # print linked list
     def print_forward(self):
         if self.head is None:
             print('List is empty')
@@ -20,6 +23,7 @@ class DoublyLinkedList:
         
         print(list + 'None')
 
+    # Print reverse linked list 
     def print_backword(self):
         if self.head is None:
             print('List is empty')
@@ -33,6 +37,7 @@ class DoublyLinkedList:
 
         print(list + 'None')
     
+    # insert at first postion/ Beginning of list 
     def insert_at_begining(self,data):
         if self.head is None:
             node = Node(data)
@@ -43,6 +48,7 @@ class DoublyLinkedList:
             self.head.prev = node
             self.head = node
 
+    # to get last node of list 
     def get_last_node(self):
         itr = self.head
         while itr.next:
@@ -50,6 +56,7 @@ class DoublyLinkedList:
         
         return itr 
 
+    # find the length of doubly linked list  
     def get_length(self):
         if self.head is None:
             print('Linked List is empty')
@@ -64,6 +71,7 @@ class DoublyLinkedList:
         print('Length of linked List :- ', count)
         return count 
 
+    # insert at end of list 
     def insert_at_end(self, data):
         if self.head is None:
             node = Node(data,None,None)

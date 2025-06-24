@@ -1,4 +1,4 @@
-str = 'm'
+str = 'madam'
 flag = False 
 
 if len(str) == 0 | len(str) == 1:
