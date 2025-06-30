@@ -231,24 +231,46 @@
 # print(a)
 
 
-s = 'AABCAAADA'
-k = 4
+# s = 'AABCAAADA'
+# k = 4
 
-n = len(s)/k
-mylist = [s[i:i+k] for i in range(0, len(s), k)]
+# n = len(s)/k
+# mylist = [s[i:i+k] for i in range(0, len(s), k)]
 
-chars = [list(i) for i in mylist]
-for lst in chars:
-    unique = []
-    for char in lst:
-        if char not in unique:
-            unique.append(char)
+# chars = [list(i) for i in mylist]
+# for lst in chars:
+#     unique = []
+#     for char in lst:
+#         if char not in unique:
+#             unique.append(char)
     
-    word = ''.join(unique)
-    print(word)
+#     word = ''.join(unique)
+#     print(word)
 
         
-print()
+# print()
 
+def count_ones_and_positions(n):
+    binary = []
+    
+    while n > 0:
+        binary.append(n % 2)
+        n //= 2
 
+    binary = binary[::-1]
 
+    positions = []
+    position = 1  
+    found_first_one = False
+
+    for bit in binary:
+        if bit == 1:
+            positions.append(position)
+            found_first_one = True
+        if found_first_one:
+            position += 1
+
+    print(len(positions))  
+    print(*positions)     
+
+count_ones_and_positions(161)
