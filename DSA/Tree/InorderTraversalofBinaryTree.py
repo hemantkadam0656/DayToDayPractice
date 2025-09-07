@@ -23,9 +23,24 @@ class Node:
             else:
                 # if right root node is empty then strart with new.
                 self.right = Node(value)
+        
 
+    def In_order_travelsal(self):
+        elements = []
 
-def InOrder(elements):
+        if self.left:
+            left_elements = self.left.In_order_travelsal()
+            elements += left_elements
+        
+        elements.append(self.value)
+
+        if self.right:
+            right_elements = self.right.In_order_travelsal()
+            elements += right_elements
+
+        return elements
+
+def Tree_bilding(elements):
     print(elements)
     root = Node(elements[0])
     print(root.value)
@@ -38,6 +53,6 @@ def InOrder(elements):
 
 if __name__ == '__main__':
     elements = [12,7,9,25,17,20]
-    root = InOrder(elements)
-    print(root)
+    root = Tree_bilding(elements)
+    print(root.In_order_travelsal())
     pass
