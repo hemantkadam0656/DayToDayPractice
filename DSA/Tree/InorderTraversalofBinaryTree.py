@@ -1,6 +1,7 @@
 class Node:
     def __init__(self, value):
         self.value = value
+        print(self.value)
         self.left = None
         self.right = None
 
@@ -39,6 +40,23 @@ class Node:
             elements += right_elements
 
         return elements
+
+    def search(self,val):
+        if val == self.value:
+            return True
+
+        if val < self.value:
+            if self.left:
+                return self.left.search(val)
+            else:
+                return False
+
+        if val > self.value:
+            if self.right:
+                return self.right.search(val)
+            else:
+                return False 
+
 
 def Tree_bilding(elements):
     print(elements)
