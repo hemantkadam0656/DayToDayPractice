@@ -1,5 +1,5 @@
 def binary_Search(nums, x):
-    low = 0 
+    low = 0
     high = len(nums) - 1 
 
     while low <= high:
@@ -12,13 +12,13 @@ def binary_Search(nums, x):
             low = mid + 1 
         
         else:
-            low = mid - 1
+            high = mid - 1
 
     return -1  
 
 
 if __name__ == '__main__':
-    nums = [2, 3, 4, 10, 40]
-    x = 10 
+    nums = [-1, 2, 3, 4, 10, 40]
+    x = -1 
     res = binary_Search(nums, x)
     print(res)
