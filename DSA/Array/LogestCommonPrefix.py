@@ -4,6 +4,7 @@ def longestCommonPrefix(arr):
     i = 0 
     letterList = []
     print(n)
+    
     while i < len(minLen):
         letter = arr[0][i]
         # print(arr[0][i])
