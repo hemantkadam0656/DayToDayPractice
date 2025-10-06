@@ -1,3 +1,5 @@
+# Vertical scanning method 
+
 def LogestCommonPrefix(arr):
     minLen = min(arr, key= len)
 
