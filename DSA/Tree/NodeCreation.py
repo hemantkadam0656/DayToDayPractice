@@ -10,5 +10,4 @@ class Node:
 
 if __name__ == '__main__':
     inst = Node(4)
-    inst.left = (inst, 9)
     
