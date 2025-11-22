@@ -1,4 +1,4 @@
-# sum of digits 145 
+#sum of digits 145 
 
 def SumOfDigits(num):
     total  = 0
