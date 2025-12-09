@@ -27,13 +27,15 @@ if __name__ == '__main__':
 
 def OptimalWay(nums):
     n = len(nums)
-    prefix = []
-    suffix = []
+    prefixList = []
+    suffixList = []
 
+    prefix = 1
+    suffix = 1
 
     for i in range(n):
-        prefix[i] = prefix[i-1] * nums[i-1]
-        
+        prefixList[i] = prefixList[i-1] * arr[i-1]
+        pass
 
 
 
