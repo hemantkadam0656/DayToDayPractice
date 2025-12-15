@@ -4,7 +4,7 @@
 # 1. Find the pivot index 
 # 2. swap the right most smaller number with pivot index element 
 # 3. swap the remaining elements from pivot+1 to n-1 
-# 4. check the pivot index is still -1, if yes then reverse tye array 
+# 4. check the pivot index is still -1, if yes then reverse the array 
 
 
 def NextPermutationArray(arr):
