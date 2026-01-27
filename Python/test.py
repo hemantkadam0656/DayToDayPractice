@@ -1,6 +1,11 @@
-list1 = [1,2,3]
+class NestedList:
+    def __init__(self, ns):
+        self.stack = ns[::-1]
 
-list2 = [4,5,6]
+    def next(self):
+        return self.stack.pop().get
 
 
-list1 += list2
+if __name__ == '__main__':
+    NS = [ [1,1], 2, [1,1] ]
+    res = NestedList(NS)
